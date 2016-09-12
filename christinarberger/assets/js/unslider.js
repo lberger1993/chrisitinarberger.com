@@ -69,8 +69,8 @@
 
 
 			arrows: {
-				next: '<ul class="icons" id="set"> <li> <a class="fa-arrow-circle-right"> </a> </li> </ul>',
-				prev: '<ul class="icons" id="set"> <li> <a class="fa-arrow-circle-left"> </a> </li> </ul>',
+				next: '<ul class="icons" id="set"> <li> <a class="fa-arrow-circle-right"> </a> </li>',
+				prev: '<ul class="icons" id="set2"> <li> <a class="fa-arrow-circle-left"> </a> </li> </ul>',
 			},
 
 
