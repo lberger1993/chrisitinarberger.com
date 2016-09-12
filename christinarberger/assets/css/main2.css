@@ -801,7 +801,7 @@
 					#set{
 						margin-right:280px !important;
 						float: none !important;
-						
+
 
 					}
 					#learn {
@@ -970,8 +970,8 @@
       width:50%;
     }
 		header{
-			padding-right:50px;
-			padding-left:50px;
+			padding-right:75px;
+			padding-left:75px;
 		}
 		.title-container{
 			height:30px;
@@ -988,10 +988,10 @@
 			margin-bottom: 1.5em;
 		}
 	 .container{
-			padding-bottom:10px;
-			width:500px;
+			padding-bottom:20px;
+			width:600px;
 			display: table;
-			margin-left: 50px;
+			margin-left: 75px;
 
 
 		}
