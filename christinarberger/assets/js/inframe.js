@@ -4,9 +4,9 @@
       	$(".zero").click(function() {
       		console.log("clicked;")
       		$(".sidemenu").square_menu({
-          flyDirection: "bottom", 
-          button: "x See More x", 
-          animationStyle: "vertical", 
+          flyDirection: "bottom",
+          button: "x See More x",
+          animationStyle: "vertical",
           closeButton: "X",
       		text: "Textured Cloth",
       		image:"images/Textured Cloth.jpg",
@@ -39,7 +39,7 @@
       		image:"images/Michigan Oil Painting-Wolf Kahn Inspired.jpg",
       		date_info: "DATE OF COMPLETION: Aug. 2016",
       		body_info: "Mediums: Oil Paints, Wolf-Kahn Inspired "
-      
+
       	});
       	$(".sidemenu").openMenu();
       });
@@ -53,7 +53,7 @@
           image:"images/abstract.jpg",
           date_info: "DATE OF COMPLETION: Aug. 2016",
           body_info: "Mediums: Oil "
-      
+
         });
         $(".sidemenu").openMenu();
       });
@@ -65,6 +65,19 @@
           closeButton: "X",
           text: "Autumn Trees",
           image:"images/woods_shot.jpg",
+          date_info: "DATE OF COMPLETION: Aug. 2016",
+          body_info: "Mediums: Crayon and Oil "
+        });
+        $(".sidemenu").openMenu();
+      });
+      $(".five").click(function() {
+          $(".sidemenu").square_menu({
+          flyDirection: "bottom",
+          button: "x See More x",
+          animationStyle: "horizontal",
+          closeButton: "X",
+          text: "Blue Trees",
+          image:"images/trees.jpg",
           date_info: "DATE OF COMPLETION: Aug. 2016",
           body_info: "Mediums: Crayon and Oil "
         });

@@ -183,6 +183,11 @@
 	p {
 		margin: 0 0 1.5em 0;
 	}
+	#title{
+
+		font-size:11px;
+		color:#c8cccf;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #313f47;
@@ -546,7 +551,7 @@
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+						text-shadow: 1.25px 0px 0px #313f47, -1.25px 0px 0px #313f47, 0px 1.25px 0px #313f47, 0px -1.25px 0px #313f47;
 					}
 
 					ul.icons li a:before {
@@ -562,7 +567,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #ff7496;
+						border-color: #313f47;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -702,7 +707,7 @@
 
 	#main {
 		position: relative;
-		max-width: 100%;
+		max-width: 50%;
 		min-width: 27em;
 		padding: 4.5em 3em 3em 3em ;
 		background: #ffffff;
@@ -854,8 +859,9 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
-		#title{
+		#title-p{
 			margin-top:10px;
-			font-size:10px;
-			text-size:10px;
+			font-size:12px;
+			color: #c8cccf;
+
 		}

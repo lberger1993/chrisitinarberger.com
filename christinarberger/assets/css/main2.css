@@ -943,7 +943,7 @@
 	}
 	#main {
 		position: relative;
-		max-width: 100%;
+		max-width: 100% !important;
 		min-width: 27em;
 		/*padding: 4.5em 10em 10em 8em ;*/
 		background: #ffffff;
@@ -1139,6 +1139,10 @@
 
 		body.is-ie #wrapper {
 			height: 100%;
+		}
+		.statement {
+			color:
+
 		}
 		#title{
 			margin-top:10px;
