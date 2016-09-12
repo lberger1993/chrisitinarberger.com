@@ -1,458 +1,134 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Painting</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main2.css" />
-    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
-    <link href='assets/css/square_menu.css' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="assets/css/unslider.css">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.square_menu.js"></script>
-		<script type="text/javascript" src="assets/js/unslider.js"></script>
-	</head>
-  <style>
-  html {
-    height: 100%;
-  }
-  body {
-    padding: 0;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    height: 100%;
-  }
-
-  .wrapper {
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-
-
-  .pointer {
-    color: #00B0FF;
-    font-family: 'Pacifico';
-    font-size: 24px;
-    margin-top: 15px;
-    position: fixed;
-    top: 62px;
-    left: 25px;
-  }
-
-
-  .main {
-    float: left;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-
-  .main h1 {
-    padding:20px 50px 10px;
-    float: left;
-    width: 100%;
-    font-size: 50px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    font-weight: 100;
-    margin: 0;
-    padding-top: 25px;
-    font-family: 'open sans';
-    text-transform: uppercase;
-  }
-
-  .main h1.demo1 {
-    background: #1ABC9C;
-  }
-
-  .reload.bell {
-    font-size: 12px;
-    padding: 20px;
-    width: 45px;
-    text-align: center;
-    height: 47px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-  }
-
-  .reload.bell #notification {
-    font-size: 25px;
-    line-height: 140%;
-  }
-
-  .reload, .btn{
-    display: inline-block;
-    border: 4px solid #A2261E;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background: #CC3126;
-    display: inline-block;
-    line-height: 100%;
-    padding: 1em;
-    text-decoration: none;
-    color: #fff;
-    width: 100px;
-    line-height: 140%;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: open sans;
-  }
-  .reload:hover{
-    background: #A2261E;
-  }
-  .btn {
-    width: 230px;
-    color: #fff;
-    border: none;
-    margin-left: 10px;
-    background: #2186B8;
-  }
-  .clear {
-    width: auto;
-  }
-  .btn:hover, .btn:hover {
-    background: #1494D3;
-  }
-  .btns {
-    width: 410px;
-    margin: 50px auto;
-  }
-  .credit {
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    font-weight: 100;
-    text-transform: capitalize;
-    font-style: italic;
-    font-size: 14px;
-    margin: 0 0 60px 0;
-    float: left;
-    width: 100%;
-    letter-spacing: 1px;
-  }
-  .credit a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    display: block;
-    padding: 7px;
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background: #86B4CC;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 11px;
-    color: black;
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    -o-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
-  }
-  .back:hover {
-    background: rgba(255,255,255,0.1);
-  }
-
-  body .sm-button {
-    position: relative;
-    /*top: 0;*/
-    /*right: 0;*/
-    text-transform: uppercase;
-    font-size: 10px;
-    z-index: 10;
-    background-color:black;
-    color:white;
-    padding:30px 20px 20px 30px;
-    margin-top:-10px;
-    float:left;
-  }
-	#button-styles{
-		position: relative;
-		/*top: 0;*/
-		/*right: 0;*/
-		text-transform: uppercase;
-		font-size: 15px;
-		z-index: 10;
-		border:black 1px solid;
-		color:black;
-		/*padding:40px 50px 40px 50px;*/
-		margin-top:30px;
-		border-radius:50px;
-		padding: 3% 5% 3% 5%;
-		/*float:left;*/
-}
-
-
-  /*.page-container {
-    min-height: 300px;
-  }*/
-
-  .sm-nav:nth-child(2) {
-    /*background: #7AAAC4;*/
-    /*background: black;*/
-    background:#BFBFBF;
-  }
-
-  .sm-menu .sm-nav:nth-child(2) .nav-inner > a{
-    font-size: 11px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-</style>
-<!-- <script>
-	jQuery(document).ready(function($) {
-		$('.my-slider').unslider();
-	});
-</script> -->
-
-<script>
-  $(document).ready( function() {
-			$('.my-slider').unslider();
-			$(".zero").click(function() {
-				console.log("clicked;")
-				$(".sidemenu").square_menu({
-		    flyDirection: "bottom", // The direction where the menu will fly from. Available options are "top", "bottom", "left", "right", "top-left", "top-right", "bottom-left" and "bottom-right". The default value is "bottom".
-		    button: "x See More x", // You can define text inside the auto-generated button here. If you want to prevent the plugin from generating a menu button, change this to false. The default value is "Menu".
-		    animationStyle: "vertical", // The type of animation style you will see after it flew in. Available options are "vertical" which expands vertically and "horizontal" which expands horizontally. Vertical works best with "top" or "bottom" flyDirection whereas Horizontal works best with "left" or "right" flyDirection. The default value is "vertical".
-		    closeButton: "X",
-				text: "Textured Cloth",
-				image:"images/Textured Cloth.jpg",
-				date_info: "DATE OF COMPLETION: Oct. 2014",
-				body_info: "Mediums: pastels "
-			});
-			$(".sidemenu").openMenu();
-		});
-		$(".one").click(function() {
-				console.log("clicked the second")
-				$(".sidemenu").square_menu({
-		    flyDirection: "bottom", // The direction where the menu will fly from. Available options are "top", "bottom", "left", "right", "top-left", "top-right", "bottom-left" and "bottom-right". The default value is "bottom".
-		    button: "x See More x", // You can define text inside the auto-generated button here. If you want to prevent the plugin from generating a menu button, change this to false. The default value is "Menu".
-		    animationStyle: "horizontal", // The type of animation style you will see after it flew in. Available options are "vertical" which expands vertically and "horizontal" which expands horizontally. Vertical works best with "top" or "bottom" flyDirection whereas Horizontal works best with "left" or "right" flyDirection. The default value is "vertical".
-		    closeButton: "X",
-				text: "Splash Forest",
-				image:"images/Paint Splash Forest.png",
-				date_info: "DATE OF COMPLETION: Oct. 2014",
-				body_info: "Mediums: Watercolors "
-				});
-			$(".sidemenu").openMenu();
-		});
-		$(".two").click(function() {
-				$(".sidemenu").square_menu({
-		    flyDirection: "bottom",
-		    button: "x See More x",
-		    animationStyle: "horizontal",
-		    closeButton: "X",
-				text: "Michigan Oil",
-				image:"images/Michigan Oil Painting-Wolf Kahn Inspired.jpg",
-				date_info: "DATE OF COMPLETION: Aug. 2016",
-				body_info: "Mediums: Oil Paints, Wolf-Kahn Inspired "
-
-			});
-			$(".sidemenu").openMenu();
-		});
-		$(".three").click(function() {
-				$(".sidemenu-three").square_menu({
-		    flyDirection: "bottom",
-		    button: "x See More x",
-		    animationStyle: "horizontal",
-		    closeButton: "X",
-				text: "Peppers",
-				image:"images/peppers.jpg",
-				date_info: "DATE OF COMPLETION: 10.10.10",
-				body_info: "Mediums: Charcole, black, blach "
-
-			});
-			$(".sidemenu").openMenu();
-		});
-		$(".four").click(function() {
-				$(".sidemenu-four").square_menu({
-				flyDirection: "bottom",
-				button: "x See More x",
-				animationStyle: "horizontal",
-				closeButton: "X",
-				text: "Abstract WaterFall",
-				image:"images/abstract.jpg",
-				date_info: "DATE OF COMPLETION: Oct. 2014",
-				body_info: "Mediums: water color "
-
-			});
-			$(".sidemenu").openMenu();
-		});
-		$(".five").click(function() {
-				$(".sidemenu-five").square_menu({
-				flyDirection: "bottom",
-				button: "x See More x",
-				animationStyle: "horizontal",
-				closeButton: "X",
-				text: "Abstract",
-				image:"images/abstract.jpg",
-				date_info: "DATE OF COMPLETION: 10.10.10",
-				body_info: "Mediums: Charcole, black, blach "
-
-			});
-			$(".sidemenu").openMenu();
-		});
-		$(".six").click(function() {
-				$(".sidemenu-six").square_menu({
-				flyDirection: "bottom",
-				button: "x See More x",
-				animationStyle: "horizontal",
-				closeButton: "X",
-				text: "Abstract",
-				image:"images/charcole_walker.jpg",
-				date_info: "DATE OF COMPLETION: 10.10.10",
-				body_info: "Mediums: Charcole, black, blach "
-
-			});
-			$(".sidemenu").openMenu();
-		});
-
-
-	});
-
-</script>
-<body>
-  <div class="wrapper">
-    <div id="wrapper">
-        <section id="main">
-        	<header>
-						<h1> Painting </h1>
-            	<span class="avatar">
-								<ul class="icons" id="navigation">
-								<li><a href="#" class="fa-coffee">Instagram</a><span id="title"> </span></li>
-								<li><a href="#" class="fa-circle-o">Facebook</a><span id="title">  </span></li>
-							</ul></span>
-          </header>
-						<div class="my-slider">
-							<ul>
-							 <li class="this">
-								<div class="container">
-									<div class = "image-container">
-										<img src="images/Textured Cloth.jpg" alt="" style="width:100%;"/>
-											<div id="learn"> </div>
-											<div class="sidemenu-zero" id="learn">
-											<a href='#' class='zero' id="button-styles"> learn more </a>
-										</div>
-									</div>
+   <head>
+      <title>Painting</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+      <link rel="stylesheet" href="assets/css/main2.css" />
+      <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+      <!--[if lte IE 9]>
+      <link rel="stylesheet" href="assets/css/ie9.css" />
+      <![endif]-->
+      <!--[if lte IE 8]>
+      <link rel="stylesheet" href="assets/css/ie8.css" />
+      <![endif]-->
+      <noscript>
+         <link rel="stylesheet" href="assets/css/noscript.css" />
+      </noscript>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+      <link href='assets/css/square_menu.css' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="assets/css/unslider.css">
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script type="text/javascript" src="assets/js/inframe.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.square_menu.js"></script>
+      <script type="text/javascript" src="assets/js/unslider.js"></script>
+   </head>
+   <style type="text/css">
+    .sm-nav:nth-child(2) {
+      background:#BFBFBF !important;
+      }
+   </style>
+   <body>
+      <div class="wrapper">
+         <div id="wrapper">
+            <section id="main">
+               <header>
+								<div class = "title-container">
+								<h1> Painting </br> <span class="title"> 01.01.2013 - present </h1>
 								</div>
-							</li>
-						<li>
-	            <div class="container">
-	              <img src="images/Paint Splash Forest.png" alt="" style="width:100%;"/>
-								<div id="learn"> </div>
-								<div class="sidemenu-one">
-									<a href='#' class='one' id="button-styles"> SEE MORE  </a>
-							 </div>
-	            </div>
-						</li>
-						<li>
-							<div class="container">
-		              <img src="images/Michigan Oil Painting-Wolf Kahn Inspired.jpg" alt="" style="width:100%;"/>
-									<div id="learn"> </div>
-									<div class="sidemenu-two">
-										<a href='#' class='two' id="button-styles"> SEE MORE  </a>
-								 </div>
-		          </div>
-						</li>
-						<!-- <li>
-							<div class="container">
-		              <img src="images/peppers.jpg" alt="" style="width:600px;height:500px;"/>
-									<div class="sidemenu-three">
-										<a href='#' class='three' id="button-styles"> SEE MORE  </a>
-								 </div>
-		            </div>
-						</li> -->
-						<li>
-							<div class="container">
-									<img src="images/abstract.jpg" alt="" style="width:100%;"/>
-									<div id="learn"> </div>
-									<div class="sidemenu-four">
-										<a href='#' class='four' id="button-styles"> x SEE MORE  x</a>
-								 </div>
-							</div>
-						</li>
-						<li>
-							<div class="container">
-										<img src="images/woods_shot.jpg" alt="" style="width:100%;"/>
-										<div id="learn"> </div>
-										<div class="sidemenu-five">
-											<a href='#' class='five' id="button-styles"> SEE MORE  </a>
-									 </div>
-							</div>
-					</li>
-					<!-- <li>
-							<div class="container">
-									<img src="images/charcole_walker.jpg" alt="" style="width:600px;height:500px;"/>
-									<div class="sidemenu-six">
-										<a href='#' class='six' id="button-styles"> SEE MORE  </a>
-								 </div>
-							</div>
-					</li> -->
-				</ul>
-			</div>
-      <!-- <footer>
-          <ul class="icons">
-                <li><a href="/painting" class="fa-picture-o"> Painting </a> <span id="title"> Painting </span></li>
-                  <li><a href="#" class="fa-coffee">Instagram</a><span id="title"> Ceramics </span></li>
-                  <li><a href="#" class="fa-circle-o">Facebook</a><span id="title"> About </span></li>
-                </ul>
-              </footer> -->
-        </section>
+
+                  <span class="avatar">
+                     <ul class="icons" id="navigation">
+                        <li><a href="#" class="fa-coffee">Instagram</a><span id="title"> </span></li>
+                        <li><a href="#" class="fa-circle-o">Facebook</a><span id="title">  </span></li>
+                     </ul>
+                  </span>
+
+               </header>
+               <div class="my-slider">
+                  <ul>
+                     <li class="this">
+                        <div class="container">
+                           <div class = "image-container">
+                              <img src="images/Textured Cloth.jpg" alt="" style="width:100%;"/>
+                              <div id="learn"> </div>
+                              <div class="sidemenu-zero" id="learn">
+                                 <a href='#' class='zero' id="button-styles"> see more </a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="container">
+                           <div class = "image-container">
+                                <img src="images/Paint Splash Forest.png" alt="" style="width:100%;"/>
+                              <div id="learn"> </div>
+                              <div class="sidemenu-one" id="learn">
+                                 <a href='#' class='one' id="button-styles"> see more </a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="container">
+                           <div class = "image-container">
+                                <img src="images/Michigan Oil Painting-Wolf Kahn Inspired.jpg" alt="" style="width:100%;"/>
+                                 <div id="learn"> </div>
+                                 <div class="sidemenu-two" id="learn">
+                                 <a href='#' class='two' id="button-styles"> see more </a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="container">
+                           <div class = "image-container">
+                              <img src="images/abstract.jpg" alt="" style="width:100%;"/>
+                              <div id="learn"> </div>
+                              <div class="sidemenu-three" id="learn">
+                              <a href='#' class='three' id="button-styles"> see more  x</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                       <div class="container">
+                           <div class = "image-container">
+                              <img src="images/woods_shot.jpg" alt="" style="width:100%;"/>
+                              <div id="learn"> </div>
+                              <div class="sidemenu-four" id="learn">
+                              <a href='#' class='four' id="button-styles"> see more </a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+         <div class = "sm-menu">
+            <div class="sidemenu">
+               <nav class="left"> 	<img id="base" src="images/Textured Cloth.jpg" alt="" style="width:600px;height:600px;"/>
+               </nav>
+               <nav class="right">
+                  <span class = "title_of_piece"> </span>
+                  <a id = "date_info"> </a>
+                  <a id="body_info">
+                  Mediums: Charcole, black, blach  </a>
+               </nav>
+            </div>
+         </div>
       </div>
-			<div class = "sm-menu">
-					<div class="sidemenu">
-		 					<nav class="left"> 	<img id="base" src="images/Textured Cloth.jpg" alt="" style="width:400px;height:400px;"/>
-		 			 		</nav>
-						 <nav class="right">
-							 <span class = "title_of_piece"> </span>
-							 <a id = "date_info"> </a>
-								<a id="body_info">
-								 Mediums: Charcole, black, blach  </a>
-						 </nav>
-	 			 	</div>
-				</div>
-			</div>
-			</body>
+   </body>
+   <!-- Scripts -->
+   <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+   <script>
+      if ('addEventListener' in window) {
+      	window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+      	document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+      }
+   </script>
 
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+   </body>
 </html>

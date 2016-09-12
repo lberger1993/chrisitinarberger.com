@@ -2,13 +2,191 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-/*
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
+	 html {
+      height: 100%;
+      }
+      body {
+      padding: 0;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      }
+      .wrapper {
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      }
+      .pointer {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: fixed;
+      top: 62px;
+      left: 25px;
+      }
+      .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+      }
+      .main h1 {
+      padding:20px 50px 10px;
+      float: left;
+      width: 100%;
+      font-size: 50px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+      padding-top: 25px;
+      font-family: 'open sans';
+      text-transform: uppercase;
+      }
+      .main h1.demo1 {
+      background: #1ABC9C;
+      }
+      .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      }
+      .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+      }
+      .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 1em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: open sans;
+      }
+      .reload:hover{
+      background: #A2261E;
+      }
+      .btn {
+      width: 230px;
+      color: #fff;
+      border: none;
+      margin-left: 10px;
+      background: #2186B8;
+      }
+      .clear {
+      width: auto;
+      }
+      .btn:hover, .btn:hover {
+      background: #1494D3;
+      }
+      .btns {
+      width: 410px;
+      margin: 50px auto;
+      }
+      .credit {
+      text-align: center;
+      color: #fff;
+      padding: 10px;
+      font-weight: 100;
+      text-transform: capitalize;
+      font-style: italic;
+      font-size: 14px;
+      margin: 0 0 60px 0;
+      float: left;
+      width: 100%;
+      letter-spacing: 1px;
+      }
+      .credit a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      }
+      .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: #86B4CC;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: black;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+      }
+      .back:hover {
+      background: rgba(255,255,255,0.1);
+      }
+      body .sm-button {
+      position: relative;
+      /*top: 0;*/
+      /*right: 0;*/
+      text-transform: uppercase;
+      font-size: 10px;
+      z-index: 10;
+      background-color:black;
+      color:white;
+      padding:30px 20px 20px 30px;
+      margin-top:-10px;
+      float:left;
+      }
+      #button-styles{
+      position: relative;
+      /*top: 0;*/
+      /*right: 0;*/
+      text-transform: uppercase;
+      font-size: 15px;
+      z-index: 10;
+      border:black 1px solid;
+      color:black;
+      /*padding:40px 50px 40px 50px;*/
+      margin-top:30px;
+      border-radius:50px;
+      padding: 3% 5% 3% 5%;
+      /*float:left;*/
+      }
+      /*.page-container {
+      min-height: 300px;
+      }*/
+      .sm-nav:nth-child(2) {
+      background:#BFBFBF !important;
+      }
+      .sm-menu .sm-nav:nth-child(2) .nav-inner > a{
+      font-size: 22px;
+      margin-bottom: 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      }
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -26,10 +204,10 @@
 	body {
 		line-height: 1;
 	}
-	/*.my-slider{
-		margin-top:30px;
+	.my-slider{
+		height:430px;
 
-	}*/
+	}
 	#learn{margin-bottom:20px;}
 	.sidemenu-zero{
 		margin-bottom:20px;
@@ -544,14 +722,15 @@
 					text-decoration: none;
 					position: relative;
 					display: block;
-					width: 3.75em;
-					height: 3.75em;
+					width: 3.00em;
+					height: 3.00em;
 					border-radius: 100%;
-					border: solid 1px #c8cccf;
-					line-height: 3.75em;
+					border:solid black 1px;
+					/*border: solid 1px #c8cccf;*/
+					line-height: 3.00em;
 					overflow: hidden;
 					text-align: center;
-					text-indent: 3.75em;
+					text-indent: 3.00em;
 					white-space: nowrap;
 				}
 
@@ -566,15 +745,21 @@
 
 					ul.icons li a:before {
 						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						text-shadow: 1.25px 0px 0px black, -1.25px 0px 0px black, 0px 1.25px 0px black, 0px -1.25px 0px black;
+
+						/*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;*/
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px black, -1.25px 0px 0px black, 0px 1.25px 0px black, 0px -1.25px 0px black;
+						background: black;
+						color:white;
+						cursor: pointer;
+						/*text-shadow: 1.25px 0px 0px black, -1.25px 0px 0px black, 0px 1.25px 0px black, 0px -1.25px 0px black;*/
 					}
 					#navigation {
 					font-size:13px;
 					float:right;
+					margin-top:1px;
 				}
 
 					ul.icons li a:before {
@@ -583,7 +768,7 @@
 						left: 0;
 						width: inherit;
 						height: inherit;
-						font-size: 1.85rem;
+						font-size: 1.4rem;
 						line-height: inherit;
 						text-align: center;
 						text-indent: 0;
@@ -598,6 +783,30 @@
 				ul.icons li a:before {
 					font-size: 1.5rem;
 				}
+				#navigation {
+					text-align:center;
+					float:none;
+				}
+				h1{
+					float:none !important;
+					text-align:center;
+				}
+				header {
+					padding-right:60px;
+					padding-left:60px;
+				}
+				.title{
+					float:none !important;
+				}
+					#set{
+						margin-right:280px !important;
+						float: none !important;
+						
+
+					}
+					#learn {
+						display: none;
+					}
 
 			}
 
@@ -727,12 +936,14 @@
 		}
 
 /* Main */
-	data-slide{
-		display: none;
+	#button-styles:hover{
+		background: black;
+		color:white;
+		cursor: pointer;
 	}
 	#main {
 		position: relative;
-		max-width: 50%;
+		max-width: 100%;
 		min-width: 27em;
 		/*padding: 4.5em 10em 10em 8em ;*/
 		background: #ffffff;
@@ -759,9 +970,18 @@
       width:50%;
     }
 		header{
-			padding:2%;
+			padding-right:50px;
+			padding-left:50px;
 		}
-
+		.title-container{
+			height:30px;
+			display:inline;
+		}
+		.title {
+			font-size:10px;
+			line-height:20px;
+			float:left;
+		}
 		#main .avatar {
 			position: relative;
 			display: block;
@@ -782,8 +1002,8 @@
 	}
 
 	 	.container .image-container img {
-			width: 400px;
-			height: 400px;
+
+			height: 340px;
 	}
 
 			#main .avatar img {
@@ -814,7 +1034,13 @@
 				padding: 4em 2em 2.5em 2em ;
 			}
 			.container{
-				width:400px !important;
+				margin-right:10px;
+				margin-left:10px;
+				width:300px !important;
+				height:300px !important;
+			}
+			.unslider{
+				width:00px;
 			}
 
 				#main .avatar:before {

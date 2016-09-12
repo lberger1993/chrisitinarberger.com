@@ -1,9 +1,3 @@
-/**
- *   Unslider
- *   version 2.0
- *   by @idiot and friends
- */
-
 (function(factory) {
 	if (typeof module === 'object' && typeof module.exports === 'object') {
 		factory(require('jquery'));
