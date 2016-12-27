@@ -63,10 +63,10 @@
           button: "x See More x",
           animationStyle: "horizontal",
           closeButton: "X",
-          text: "Autumn Trees",
+          text: "Spring Trees",
           image:"images/woods_shot.jpg",
-          date_info: "DATE OF COMPLETION: Aug. 2016",
-          body_info: "Mediums: Crayon and Oil "
+          date_info: "DATE OF COMPLETION: April 2016",
+          body_info: "Mediums: Oil Pastels & Water Color "
         });
         $(".sidemenu").openMenu();
       });

@@ -32,6 +32,7 @@
     $( ".title_of_piece" ).text(options.text );
     $("#date_info").text( options.date_info);
     $("#body_info").text( options.body_info);
+    $("#insp").text( options.insp);
 
 
     var src = options.image;
