@@ -38,9 +38,9 @@
           closeButton: "X",
           text: "Skeleton Sketch ",
           image:"images/SkeletonSketch.jpg",
-          date_info: "DATE OF COMPLETION: Oct. 2014",
-          body_info: "Mediums: Watercolors ", 
-          insp: ""
+          date_info: "DATE OF COMPLETION: Feb. 2014",
+          body_info: "Mediums: Pencil ", 
+          insp: "Inspiration: Intricacies and shadows of human skeletons. Techniques using different pencil leads."
           });
         $(".sidemenu").openMenu();
       });
@@ -73,6 +73,20 @@
           insp: "INSPIRATION: Metal teapot. Charcoal drawing technique."
 
           });
+        $(".sidemenu").openMenu();
+      });
+      $(".five").click(function() {
+          $(".sidemenu").square_menu({
+          flyDirection: "bottom",
+          button: "x See More x",
+          animationStyle: "horizontal",
+          closeButton: "X",
+          text: "Blue Trees",
+          image:"images/trees.jpg",
+          date_info: "DATE OF COMPLETION: Aug. 2016",
+          body_info: "Mediums: Crayon and Oil ", 
+          insp: "Wolf Kahn inspired tree using colored pencils."
+        });
         $(".sidemenu").openMenu();
       });
       
